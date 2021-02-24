@@ -7,7 +7,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <Person></Person>
+        <Person></Person>   
         </p>
         <a
           className="App-link"
@@ -15,11 +16,22 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
       </header>
     </div>
   );
+}
+function Person(){
+  const personStyle={
+    border:'2px solid red',
+    margin:'10px' 
+  }
+  return (
+    <div style={personStyle}>
+      <h1>Name: Sheikh Md. Tuhin</h1>
+      <h3>A react Developer!</h3>
+    </div>
+  )
 }
 
 export default App;
